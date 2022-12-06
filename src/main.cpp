@@ -2,6 +2,6 @@
 
 
 int main(){
-  std::cout << "Lohnsteuer Programm\n";
+  std::cout << "Lohnsteuer Programm 2022\n";
 }
 

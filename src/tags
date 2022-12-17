@@ -9,4 +9,8 @@
 !_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
 !_TAG_PROGRAM_URL	https://ctags.io/	/official site/
 !_TAG_PROGRAM_VERSION	5.9.0	//
+children_num	functional_helper.cpp	/^std::string children_num (int num){$/;"	f	typeref:typename:std::string
+children_string	functional_helper.cpp	/^std::string children_string (int num){$/;"	f	typeref:typename:std::string
 main	main.cpp	/^int main(){$/;"	f	typeref:typename:int
+num_children	functional_helper.cpp	/^int num_children(int num){$/;"	f	typeref:typename:int
+payrollTax	CMakeLists.txt	/^add_executable(payrollTax main.cpp functional_helper.cpp)$/;"	t

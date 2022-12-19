@@ -23,6 +23,18 @@ endif()
 
 add_subdirectory(src)
 
+add_subdirectory(lib)
+
+##add_executable(payrollTax "${PROJECT_SOURCE_DIR}/src/main.cpp")
+
+target_link_libraries(payrollTax lib)
+##target_link_libraries(payrollTax PUBLIC lib)
+
+##include_directories(payrollTax PUBLIC "${PROJECT_BINARY_DIR}"
+##                                      "${PROJECT_SOURCE_DIR}/lib")
+
+##add_executable(payrollTax "${PROJECT_SOURCE_DIR}/src/main.cpp")
+
 enable_testing()
 
 if(BUILD_TESTING)

@@ -1,7 +1,9 @@
 #include <iostream>
 #include <string>
 
-#include "functional_helper.hpp"
+#include "../lib/functional_helper.hpp"
+#include "../lib/uptab21.hpp"
+#include "../lib/mre4.hpp"
 
 int main(){
   std::string e{""};
@@ -9,6 +11,7 @@ int main(){
   std::cout << "Wie viele Kinder haben Sie?\n";
   std::cin >> e;
   int total_children = num_children(stoi(e));
-  std::cout << "Sie haben " << children_num(total_children) << children_string(total_children) << " angegeben.\n"; 
+  std::cout << "Sie haben " << children_num(total_children)
+            << children_string(total_children) << " angegeben.\n";
 }
 

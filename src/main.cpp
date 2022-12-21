@@ -8,6 +8,8 @@
 int main(){
   std::string e{""};
   std::cout << "Lohnsteuer Programm 2022\n";
+  std::cout << "file loader\n";
+  loadConfig();
   std::cout << "Wie viele Kinder haben Sie?\n";
   std::cin >> e;
   int total_children = num_children(stoi(e));

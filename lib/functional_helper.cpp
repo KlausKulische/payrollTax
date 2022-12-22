@@ -1,20 +1,21 @@
 #include "functional_helper.hpp"
 
-std::vector<double> config; 
+std::vector<double> configVec;
+std::vector<std::string> stringVec;
 
 std::string loadConfig() {
-//  const std::string filename {"../lib/a.txt"};
-//  std::cout << filename << '\n';
-  std::string line {"blank "};
+  std::string line {"blank"};
   std::ifstream inputFile("../lib/config.csv");
     if(!inputFile.is_open()){
-      throw std::runtime_error("keine Datei geladen !");
+      throw std::runtime_error("keine Config Datei geladen !");
     }else{
-      while(std::getline(inputFile, line)){
-        std::cout << line << '\n';
+      while(std::getline(inputFile, line, ',')){
+        stringVec.push_back(line);
+        // std::cout << line << '\n';
       }
-      inputFile.close();
     }
+  inputFile.close();
+  std::cout << "Vec 3 " << stringVec.at(19) << '\n';
 };
 
 int num_children(int num){

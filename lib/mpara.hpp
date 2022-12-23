@@ -1,4 +1,4 @@
 #pragma once
 
-const bool isKrvNull(int krv);
+const bool isKrvLessTwo (const int &krv);
 

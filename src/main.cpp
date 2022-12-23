@@ -9,6 +9,7 @@ int main(){
   std::cout << "file loader\n";
   loadConfig();
   std::cout << "Vec " << '\n';
+  vecOutput(::stringVec);
   std::cout << "Wie viele Kinder haben Sie?\n";
   std::cin >> e;
   int total_children = num_children(stoi(e));

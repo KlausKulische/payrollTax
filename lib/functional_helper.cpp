@@ -1,9 +1,10 @@
 #include "functional_helper.hpp"
+#include <sstream>
 
 std::vector<double> configVec;
 std::vector<std::string> stringVec;
 
-std::string loadConfig() {
+const std::string loadConfig() {
   std::string line {"blank"};
   std::ifstream inputFile("../lib/config.csv");
     if(!inputFile.is_open()){
@@ -15,7 +16,12 @@ std::string loadConfig() {
       }
     }
   inputFile.close();
-  std::cout << "Vec 3 " << stringVec.at(19) << '\n';
+};
+
+const std::string vecOutput(std::vector<std::string> &inputVec){
+  for(size_t i = 0; i < inputVec.size(); ++i){
+    std::cout << i << '\t' << inputVec.at(i) << '\n';
+  }
 };
 
 int num_children(int num){

@@ -1,11 +1,9 @@
 #include "mpara.hpp"
 
-const bool isKrvNull(int krv){
-  if(krv >= 0)
-    return false;
-  else
+const bool isKrvLessTwo (const int &krv){
+  if(krv < 2)
     return true;
+  else
+    return false;
 };
-
-
 

@@ -1,3 +1,4 @@
+#include "../lib/configHandler.hpp"
 #include "../lib/functional_helper.hpp"
 #include "../lib/uptab21.hpp"
 #include "../lib/mre4.hpp"
@@ -9,7 +10,7 @@ int main(){
   std::cout << "file loader\n";
   loadConfig();
   std::cout << "Vec " << '\n';
-  vecOutput(::stringVec);
+  vecOutput(rawStringVec);
   std::cout << "Wie viele Kinder haben Sie?\n";
   std::cin >> e;
   int total_children = num_children(stoi(e));

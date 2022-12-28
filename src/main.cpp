@@ -11,9 +11,14 @@ int main(){
   loadConfig();
   std::cout << "Vec " << '\n';
   vecOutput(rawStringVec);
+  std::cout << "//////////////////////////////////////////////" << '\n';
+
+  std::cout << rawStringVec.at(0) << '\n';
+  std::cout << std::stod(rawStringVec.at(33)) + std::stod(rawStringVec.at(33))
+    << '\n';
   std::cout << "Wie viele Kinder haben Sie?\n";
   std::cin >> e;
-  int total_children = num_children(stoi(e));
+  int total_children = num_children(validChild(std::stoi(e)));
   std::cout << "Sie haben " << children_num(total_children)
             << children_string(total_children) << " angegeben.\n";
 }

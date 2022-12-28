@@ -3,7 +3,6 @@
 
 #include "../lib/configHandler.hpp"
 
-std::vector<double>       rawYearVec;
 std::vector<std::string>  rawStringVec;
 
 const std::string vecOutput(std::vector<std::string> &inputVec){
@@ -20,9 +19,7 @@ const std::string loadConfig() {
     }else{
       while(std::getline(configFile, line, ',')){
         rawStringVec.push_back(removeNewLine(line));
-        // std::cout << line << '\n';
       }
-#include <algorithm>
     }
   configFile.close();
 };
@@ -30,5 +27,13 @@ const std::string loadConfig() {
 std::string removeNewLine(std::string &str){
   str.erase(std::remove(str.begin(), str.end(), '\n'), str.cend());
   return str;
+};
+
+int validChild(int in){
+  if(in < 0 || in > 7){
+    return 0;
+  }else{
+    return in;
+  }
 };
 

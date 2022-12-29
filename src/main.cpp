@@ -12,10 +12,13 @@ int main(){
   std::cout << "Vec " << '\n';
   vecOutput(rawStringVec);
   std::cout << "//////////////////////////////////////////////" << '\n';
+ 
+  std::cout << "Welches Jahr wollen sie auswaehlen ?\n";
+  std::cin >> e;
+  std::cout << rawStringVec.at(pickYear(std::stoi(e))) << '\n';
 
-  std::cout << rawStringVec.at(0) << '\n';
-  std::cout << std::stod(rawStringVec.at(33)) + std::stod(rawStringVec.at(33))
-    << '\n';
+  std::cout << "//////////////////////////////////////////////" << '\n';
+  
   std::cout << "Wie viele Kinder haben Sie?\n";
   std::cin >> e;
   int total_children = num_children(validChild(std::stoi(e)));

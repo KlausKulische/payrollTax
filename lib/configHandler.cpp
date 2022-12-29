@@ -5,6 +5,22 @@
 
 std::vector<std::string>  rawStringVec;
 
+int multYear(int selectedYear,int defaultYear, int row){
+  return row *(selectedYear - defaultYear);
+};
+
+int pickYear(int year){
+  int index {30};
+  int row  {30};
+  int defaultYear{2021};
+  if(year == 2023)
+    index = index + multYear(year,defaultYear,row);
+  if(year == 2022)
+    index = index + multYear(year,defaultYear,row);
+  else
+    index = index;
+  return index;
+}
 const std::string vecOutput(std::vector<std::string> &inputVec){
   for(size_t i = 0; i < inputVec.size(); ++i){
     std::cout << i << '\t' << inputVec.at(i) << '\n';

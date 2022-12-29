@@ -2,11 +2,10 @@
 //  
 
 #include "../lib/configHandler.hpp"
-#include <stdexcept>
 
 std::vector<std::string>  rawStringVec;
 
-int verifiSelectedIndex(int selectedIndex){
+int validateSelectedIndex(int selectedIndex){
   if(selectedIndex > 0 && selectedIndex < 30){
     return selectedIndex;
   }else{

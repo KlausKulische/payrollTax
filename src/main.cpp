@@ -19,7 +19,7 @@ int main(){
 
   std::cout << "//////////////////////////////////////////////" << '\n';
   
-  std::cout << verifiSelectedIndex(8) << '\n';
+  std::cout << validateSelectedIndex(8) << '\n';
 
   std::cout << "//////////////////////////////////////////////" << '\n';
   

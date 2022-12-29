@@ -19,6 +19,10 @@ int main(){
 
   std::cout << "//////////////////////////////////////////////" << '\n';
   
+  std::cout << verifiSelectedIndex(8) << '\n';
+
+  std::cout << "//////////////////////////////////////////////" << '\n';
+  
   std::cout << "Wie viele Kinder haben Sie?\n";
   std::cin >> e;
   int total_children = num_children(validChild(std::stoi(e)));

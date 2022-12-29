@@ -2,8 +2,18 @@
 //  
 
 #include "../lib/configHandler.hpp"
+#include <stdexcept>
 
 std::vector<std::string>  rawStringVec;
+
+int verifiSelectedIndex(int selectedIndex){
+  if(selectedIndex > 0 && selectedIndex < 30){
+    return selectedIndex;
+  }else{
+    throw std::runtime_error("index out of bounce \n");
+  }
+  return selectedIndex;
+};
 
 int multYear(int selectedYear,int defaultYear, int row){
   return row *(selectedYear - defaultYear);

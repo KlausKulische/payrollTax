@@ -15,7 +15,7 @@ extern const std::string loadConfig();
 
 std::string removeNewLine(std::string &str);
 int validChild(int in);
-int pickYear(int year);
-int multYear(int selectedYear,int defaultYear, int row);
+int pickYearIndex(int year);
+int setYearIndex(int &selectedYear,int &defaultYear, int &row);
 int validateSelectedIndex(int selectedIndex);
 

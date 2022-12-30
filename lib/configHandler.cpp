@@ -14,18 +14,18 @@ int validateSelectedIndex(int selectedIndex){
   return selectedIndex;
 };
 
-int multYear(int selectedYear,int defaultYear, int row){
+int setYearIndex(int &selectedYear,int &defaultYear, int &row){
   return row *(selectedYear - defaultYear);
 };
 
-int pickYear(int year){
+int pickYearIndex(int year){
   int index {30};
   int row  {30};
   int defaultYear{2021};
   if(year == 2023)
-    index = index + multYear(year,defaultYear,row);
+    index = index + setYearIndex(year,defaultYear,row);
   if(year == 2022)
-    index = index + multYear(year,defaultYear,row);
+    index = index + setYearIndex(year,defaultYear,row);
   else
     index = index;
   return index;

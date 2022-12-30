@@ -15,7 +15,7 @@ int main(){
  
   std::cout << "Welches Jahr wollen sie auswaehlen ?\n";
   std::cin >> e;
-  std::cout << rawStringVec.at(pickYear(std::stoi(e))) << '\n';
+  std::cout << rawStringVec.at(pickYearIndex(std::stoi(e))) << '\n';
 
   std::cout << "//////////////////////////////////////////////" << '\n';
   

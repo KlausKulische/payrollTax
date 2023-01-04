@@ -2,7 +2,6 @@
 
 double paramPensionFundKrv(int year, int krv){
   double i;
-  double p;
   if(krv == 0){
     i = std::stod(rawStringVec.at((pickYearIndex(year) + 2)));
   }else{

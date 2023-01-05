@@ -19,9 +19,9 @@ int setYearIndex(int &selectedYear,int &defaultYear, int &row){
 };
 
 int pickYearIndex(int year){
-  int index {30};
-  int row  {30};
-  int defaultYear{2021};
+  int index       {30};
+  int row         {30};
+  int defaultYear {2021};
   if(year == 2023)
     index = index + setYearIndex(year,defaultYear,row);
   if(year == 2022)

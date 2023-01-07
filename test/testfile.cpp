@@ -7,16 +7,19 @@ int main(){
 
 int test_val_selected_idx(){
   const int idx {4};
-  const int end = validateSelectedIndex(4);
+  int ex {4};
+  const int end = validateSelectedIndex(ex);
   assert(idx == end);
 };
 
 
 int test_val_selected_idx_fail(){
   const int idx {29};
-  const int end = validateSelectedIndex(29);
+  int ex {29};
+  const int end = validateSelectedIndex(ex);
   assert(idx == end);
 };
+
 //static constexpr auto input = [](std::string const& fileName) {
 //  std::ifstream inputFileStream;
 //  inputFileStream.open(fileName);

@@ -16,7 +16,8 @@ int main(){
  
   std::cout << "Welches Jahr wollen sie auswaehlen ?\n";
   std::cin >> e;
-  std::cout << rawStringVec.at(pickYearIndex(std::stoi(e))) << '\n';
+  int in = std::stoi(e);
+  std::cout << rawStringVec.at(pickYearIndex(in)) << '\n';
   
   std::cout << "//////////////////////////////////////////////" << '\n';
   std::cout << paramPensionFundKrv(std::stoi(e),1) << '\n';
@@ -27,7 +28,9 @@ int main(){
   
   std::cout << "Wie viele Kinder haben Sie?\n";
   std::cin >> e;
-  int total_children = num_children(validChild(std::stoi(e)));
+  int in_1 = std::stoi(e);
+  int ine = validChild(in_1);
+  int total_children = num_children(ine);
   std::cout << "Sie haben " << children_num(total_children)
             << children_string(total_children) << " angegeben.\n";
 }

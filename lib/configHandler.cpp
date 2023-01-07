@@ -5,7 +5,7 @@
 
 std::vector<std::string>  rawStringVec;
 
-int validateSelectedIndex(int selectedIndex){
+int validateSelectedIndex(int &selectedIndex){
   if(selectedIndex > 0 && selectedIndex < 30){
     return selectedIndex;
   }else{
@@ -18,7 +18,7 @@ int setYearIndex(int &selectedYear,int &defaultYear, int &row){
   return row *(selectedYear - defaultYear);
 };
 
-int pickYearIndex(int year){
+int pickYearIndex(int &year){
   int index       {30};
   int row         {30};
   int defaultYear {2021};
@@ -54,7 +54,7 @@ std::string removeNewLine(std::string &str){
   return str;
 };
 
-int validChild(int in){
+int validChild(int &in){
   if(in < 0 || in > 7){
     return 0;
   }else{

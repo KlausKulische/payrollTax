@@ -14,8 +14,8 @@ extern const std::string vecOutput(std::vector<std::string> &inputVec);
 extern const std::string loadConfig();
 
 std::string removeNewLine(std::string &str);
-int validChild(int in);
-int pickYearIndex(int year);
+int validChild(int &in);
+int pickYearIndex(int &year);
 int setYearIndex(int &selectedYear,int &defaultYear, int &row);
-int validateSelectedIndex(int selectedIndex);
+int validateSelectedIndex(int &selectedIndex);
 

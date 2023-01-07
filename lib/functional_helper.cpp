@@ -1,10 +1,10 @@
 #include "functional_helper.hpp"
 
-int num_children(int num){
+int num_children(int &num){
   return num;
 };
 
-std::string children_string (int num){
+std::string children_string (int &num){
   if(num == 1)
     return " Kind";
   if(num == 0)
@@ -13,7 +13,7 @@ std::string children_string (int num){
     return " Kinder";
 };
 
-std::string children_num (int num){
+std::string children_num (int &num){
   if(num == 0)
     return "";
   else
